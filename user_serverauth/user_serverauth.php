@@ -112,6 +112,10 @@ class ServerAuthBackend implements IApacheBackend, UserInterface, IUserBackend {
     public function getLogoutAttribute() {
         return;
     }
+    
+    public function getLogoutUrl() {
+        return "";
+    }
 
     /**
      * This method is only called within an active Apache session
